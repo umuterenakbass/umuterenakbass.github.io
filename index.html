@@ -1,0 +1,297 @@
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolyo | Bilgisayar Mühendisi</title>
+		<meta name="description" content="Bilgisayar mühendisliği son sınıf öğrencisi için proje odaklı portfolyo: projeler, hedefler, yetkinlikler ve iletişim." />
+		<meta name="color-scheme" content="light dark" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Chart.js for simple visualizations -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+		<script src="js/main.js" defer></script>
+	</head>
+	<body>
+		<header class="site-header" id="top">
+			<div class="container header-inner">
+				<a class="brand" href="#top" aria-label="Ana sayfa">
+					<span class="brand-avatar" aria-hidden="true">👨‍💻</span>
+					<span class="brand-text">
+						<strong>Umut Eren Akbaş</strong>
+						<small data-i18n="brand.subtitle">Bilgisayar Mühendisi Adayı</small>
+					</span>
+				</a>
+				<nav class="site-nav" aria-label="Birincil">
+					<button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+						<span class="sr-only">Menüyü Aç/Kapat</span>
+						☰
+					</button>
+					<ul id="nav-list">
+						<li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+						<li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+						<li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+						<li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+					</ul>
+				</nav>
+				<div class="header-actions">
+					<button class="theme-toggle" id="themeToggle" aria-label="Tema Değiştir">🌙</button>
+					<button class="theme-toggle" id="langToggle" aria-label="Dili Değiştir">TR</button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<!-- Hero -->
+			<section class="section hero" id="hero">
+				<div class="container grid-2">
+					<div>
+						<h1><span data-i18n="hero.hi">Merhaba, ben</span> <span class="accent">Umut Eren Akbaş</span></h1>
+						<p class="lead" data-i18n="hero.lead">
+							Bilgisayar mühendisliği son sınıf öğrencisiyim. <strong>Modern web</strong> ve <strong>yapay zekâ</strong> odaklı projeler geliştiriyorum. Bu sitede hedeflerimi, yetkinliklerimi ve detaylı proje anlatımlarımı bulabilirsiniz.
+						</p>
+						<div class="cta">
+							<a class="btn primary" href="#projects" data-i18n="hero.cta.projects">Projelerimi Gör</a>
+							<a class="btn outline" href="#contact" data-i18n="hero.cta.contact">İletişime Geç</a>
+						</div>
+						<ul class="quick-facts">
+							<li data-i18n="hero.fact.goal">🚀 Hedef: Backend + AI ürün geliştirme</li>
+							<li data-i18n="hero.fact.interest">🎯 İlgi: MLOps, Bulut, Dağıtık Sistemler</li>
+						</ul>
+					</div>
+					<div class="hero-card">
+						<img src="assets/projects/project5/ss1.png" alt="Bitirme Projesi: Flappy Bird DQN ekran görüntüsü" class="hero-img"/>
+						<div class="hero-badges">
+							<span class="badge">JavaScript</span>
+							<span class="badge">Python</span>
+							<span class="badge">Docker</span>
+							<span class="badge">AWS</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="section" id="about">
+				<div class="container">
+					<h2 data-i18n="about.h2">Hakkımda</h2>
+					<p data-i18n="about.p">Yazılım geliştirmeyi, özellikle problem çözme ve yaratıcı düşünme yönleriyle tutkuyla seviyorum. Takım çalışmasına uyum sağlayan, kod kalitesine ve dokümantasyona önem veren bir geliştiriciyim. Bitirme projemde, yapay zekanın kendi kendine öğrendiği bir Flappy Bird oyunu geliştiriyorum; bu süreç bana hem algoritma tasarımını hem de derin öğrenmenin gerçek dünya uygulamalarını deneyimleme fırsatı sunuyor. Yeni teknolojileri keşfetmek ve öğrendiklerimi projelere dönüştürmek motivasyonumun en büyük kaynağı.</p>
+					<div class="stats">
+						<div class="stat"><strong>10+</strong><span data-i18n="about.stat.projects">Proje</span></div>
+						<div class="stat"><strong>15</strong><span data-i18n="about.stat.published">Yayınlanan Repo</span></div>
+						<div class="stat"><strong>5k+</strong><span data-i18n="about.stat.loc">Kod Satırı</span></div>
+					</div>
+					<div class="goals">
+						
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Skills -->
+			<section class="section alt" id="skills">
+				<div class="container">
+					<h2 data-i18n="skills.h2">Yetenekler</h2>
+					<div class="skills-grid">
+						<div class="skill">
+							<div class="skill-head"><span>Python (ML / Backend)</span><span data-i18n="level.advanced">İleri</span></div>
+							<div class="bar"><span style="width: 85%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>PyTorch (DL)</span><span data-i18n="level.advanced">İleri</span></div>
+							<div class="bar"><span style="width: 80%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>scikit‑learn</span><span data-i18n="level.advanced">İleri</span></div>
+							<div class="bar"><span style="width: 75%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>Pandas & NumPy</span><span data-i18n="level.advanced">İleri</span></div>
+							<div class="bar"><span style="width: 85%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>Flask (Web)</span><span data-i18n="level.intermediatePlus">Orta‑İleri</span></div>
+							<div class="bar"><span style="width: 72%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>NLP (LSTM/BiLSTM/CNN)</span><span data-i18n="level.intermediatePlus">Orta‑İleri</span></div>
+							<div class="bar"><span style="width: 70%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>Reinforcement Learning (DQN)</span><span data-i18n="level.intermediatePlus">Orta‑İleri</span></div>
+							<div class="bar"><span style="width: 68%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>Web Scraping (BeautifulSoup)</span><span data-i18n="level.intermediate">Orta</span></div>
+							<div class="bar"><span style="width: 65%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>Frontend (HTML/CSS/JS, Bootstrap)</span><span data-i18n="level.intermediate">Orta</span></div>
+							<div class="bar"><span style="width: 60%"></span></div>
+						</div>
+						<div class="skill">
+							<div class="skill-head"><span>Pygame & Game AI</span><span data-i18n="level.intermediate">Orta</span></div>
+							<div class="bar"><span style="width: 60%"></span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Projects -->
+			<section class="section" id="projects">
+				<div class="container">
+					<h2 data-i18n="projects.h2">Projeler</h2>
+					<p class="muted" data-i18n="projects.sub">Her kart tıklanınca özet, görseller, teknoloji etiketleri ve küçük bir grafik ile detaylar açılır.</p>
+					<div id="projectGrid" class="project-grid" aria-live="polite"></div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section class="section alt" id="contact">
+				<div class="container">
+					<h2 data-i18n="contact.h2">İletişim</h2>
+					<p data-i18n="contact.p">Proje veya iş birliği için benimle iletişime geçebilirsiniz.</p>
+						<ul class="contact-list">
+							<li>📧 <a href="mailto:umuterenakbass@gmail.com">umuterenakbass@gmail.com</a></li>
+							<li>🔗 <a href="https://github.com/umuterenakbass" target="_blank" rel="noopener">GitHub</a></li>
+							<li>🔗 <a href="https://www.linkedin.com/in/umut-eren-akbaş-aba8a227a/" target="_blank" rel="noopener">LinkedIn</a></li>
+							<li>📄 <a href="assets/cv.pdf" download data-i18n="cv.download">CV'yi İndir</a> <small class="muted"></small></li>
+						</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>© <span id="year"></span> Umut Eren Akbaş — <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+			</div>
+		</footer>
+
+		<!-- Project Modal -->
+		<dialog id="projectModal" class="modal">
+			<form method="dialog" class="modal-backdrop" aria-label="Kapat"></form>
+			<div class="modal-card" role="document" aria-labelledby="modalTitle">
+				<button class="modal-close" data-i18n-attr="aria-label" data-i18n="modal.close" aria-label="Kapat">×</button>
+				<div class="modal-body">
+					<div class="modal-media">
+						<img id="modalImage" src="assets/placeholder.svg" alt="Proje görseli" />
+						<div class="modal-thumbs" id="modalThumbs"></div>
+					</div>
+					<div class="modal-content">
+						<h3 id="modalTitle" data-i18n="modal.titlePlaceholder">Proje Başlığı</h3>
+						<p id="modalDesc" class="muted" data-i18n="modal.descPlaceholder">Proje açıklaması burada.</p>
+						<div class="chip-list" id="modalTags"></div>
+						<div class="modal-links" id="modalLinks"></div>
+						<div class="chart-box">
+							<canvas id="modalChart" height="160" aria-label="Proje metrik grafiği"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</dialog>
+
+		<!-- Inline project data for local file viewing; main.js will also try data/projects.json when served -->
+		<script id="project-data" type="application/json">
+			{
+				"projects": [
+					{
+						"id": "flappy-ai",
+						"title": {"tr":"Deep Q-Learning ile Özerk Flappy Bird Oyunu","en":"Autonomous Flappy Bird with Deep Q-Learning"},
+						"summary": {"tr":"PyTorch ile geliştirilen DQN ajanı; experience replay, epsilon-greedy ve target network güncellemeleriyle Flappy Bird oynuyor.","en":"A PyTorch DQN agent plays Flappy Bird using experience replay, epsilon-greedy, and target network updates."},
+						"description": {"tr":"PyTorch tabanlı Deep Q-Network (DQN) yaklaşımıyla Flappy Bird oynayan bir ajan. Experience replay, epsilon-greedy keşif, hedef ağ (target network) ve istikrarı artıran modern DQN teknikleriyle eğitildi. Pygame ortamı üzerinde eğitim/izleme ve performans metrikleri raporlandı.","en":"A Flappy Bird agent built with a PyTorch Deep Q-Network (DQN). Trained with experience replay, epsilon-greedy exploration, a target network, and other stability techniques. Training/monitoring on a Pygame environment with reported performance metrics."},
+						"tags": ["Deep Learning", "Reinforcement Learning", "DQN", "PyTorch", "Game AI", "Machine Learning", "Flappy Bird", "Python", "Pygame"],
+						"images": [
+							"assets/projects/project5/ss1.png",
+							"assets/projects/project5/metrics.png"
+						],
+						"links": {"repo": "https://github.com/umuterenakbass/flappy_ai"},
+						"metrics": {
+							"Ortalama Ödül": 817.99,
+							"Medyan Ödül": 528.60,
+							"Std Sapma": 1297.91,
+							"Minimum Ödül": -922.38,
+							"Maksimum Ödül": 9915.90,
+							"En İyi Episode": 163,
+							"En Kötü Episode": 34
+						}
+					},
+					{
+						"id": "fake-news-analysis",
+						"title": {"tr":"Yalan Haber Analizi","en":"Fake News Analysis"},
+						"summary": {"tr":"Makine öğrenmesi ile sahte haber tespiti yapan web uygulaması.","en":"A web app that detects fake news with machine learning."},
+						"description": {"tr":"Makine öğrenmesi ile haber metinlerinde sahte/gerçek sınıflandırması yapan Flask tabanlı bir web uygulaması. scikit-learn, pandas ve NumPy ile eğitim; Bootstrap 5 ile arayüz; sonuçlarda güven skoru gösterimi.","en":"A Flask web app for fake/real classification on news text using scikit‑learn, pandas, and NumPy; Bootstrap 5 UI; shows a confidence score for predictions."},
+						"tags": ["Python", "Flask", "scikit-learn", "pandas", "NumPy", "Bootstrap 5"],
+						"images": [
+							"assets/projects/project4/ss1.png"
+						],
+						"links": {"repo": "https://github.com/umuterenakbass/fake-news-detection"},
+						"metrics": {
+							"Accuracy": 93,
+							"FAKE F1": 93,
+							"REAL F1": 93
+						}
+					},
+					{
+						"id": "p-reddit-sentiment-analysis",
+						"title": {"tr":"Reddit Yorumları Üzerinde Duygu Analizi","en":"Sentiment Analysis on Reddit Comments"},
+						"summary": {"tr":"Reddit’ten çekilen 7000 yorumda LSTM, BiLSTM ve CNN ile duygu analizi; Flask arayüzünde görselleştirme.","en":"Sentiment analysis on 7k Reddit comments with LSTM, BiLSTM, and CNN; visualized in a Flask UI."},
+						"description": {"tr":"Bu proje kapsamında, Reddit’ten PRAW ile toplanan 7000 İngilizce yorum temizlenmiş ve TextBlob ile pozitif/negatif/nötr olarak etiketlenmiştir. LSTM, BiLSTM ve CNN modelleri ile sınıflandırma yapılmış; doğruluk, kayıp ve F1 skorları analiz edilmiştir. Sonuçlar Flask tabanlı web uygulamasında grafiksel sunulmuştur; veri dengesizliği ve underfitting etkileri çeşitli yöntemlerle ele alınmıştır.","en":"Collected 7,000 English comments from Reddit with PRAW, cleaned and labeled as positive/negative/neutral via TextBlob. Trained LSTM, BiLSTM, and CNN models; analyzed accuracy, loss, and F1 scores. Results are visualized in a Flask web app; addressed class imbalance and underfitting with various techniques."},
+						"tags": ["Python", "Flask", "Deep Learning", "NLP", "LSTM", "BiLSTM", "CNN", "TextBlob"],
+						"images": [
+							"assets/projects/project3/accuracy.png",
+							"assets/projects/project3/f1_score.png",
+							"assets/projects/project3/loss.png"
+						],
+						"links": {"repo": "https://github.com/umuterenakbass/redditscrap"},
+						"metrics": {
+							"LSTM F1": 79,
+							"BiLSTM F1": 79,
+							"CNN F1": 77
+						}
+					},
+					{
+						"id": "top-movie",
+						"title": {"tr":"CineFind","en":"CineFind"},
+						"summary": {"tr":"IMDb Film Keşif Uygulaması","en":"IMDb Movie Discovery App"},
+						"description": {"tr":"IMDb verisiyle tür bazında en yüksek puanlı filmleri keşfetmeye yardımcı bir web uygulaması. Modern arayüz, hızlı scraping, rastgele öneriler ve CSV dışa aktarma özellikleri içerir.","en":"A web app to discover top‑rated movies by genre using IMDb data. Features a modern UI, fast scraping, random recommendations, and CSV export."},
+						"tags": ["Python", "Flask", "BeautifulSoup", "HTML", "CSS", "JavaScript"],
+						"images": [
+							"assets/projects/project2/ss1.png",
+							"assets/projects/project2/ss2.png",
+							"assets/projects/project2/ss3.png"
+						],
+						"links": {"repo": "https://github.com/umuterenakbass/topmovie"},
+						"metrics": {
+							"Routes": 70,
+							"Kategoriler": 87,
+							"Scraping Yöntemi": 100,
+							"Frontend Fonksiyon": 75,
+							"CSS Animasyon": 80
+						}
+					},
+					{
+						"id": "music-recommender",
+						"title": {"tr":"Musicommend","en":"Musicommend"},
+						"summary": {"tr":"KNN tabanlı müzik öneri sistemi","en":"Music Recommender using KNN"},
+						"description": {"tr":"Ses özelliklerine dayalı benzer şarkılar öneren K‑En Yakın Komşu (KNN) tabanlı bir müzik öneri sistemi.","en":"A K‑Nearest Neighbors (KNN) based music recommendation system suggesting similar songs using audio features."},
+						"tags": ["Python", "NumPy", "Pandas", "Scikit-learn", "KNN"],
+						"images": [
+							"assets/projects/project1/ss1.png",
+							"assets/projects/project1/ss2.png"
+						],
+						"links": {"repo": "https://github.com/umuterenakbass/musicomend"},
+						"metrics": {
+							"Başarı Oranı": 100,
+							"Çeşitlilik": 91,
+							"Yanıt Hızı": 99,
+							"Benzerlik": 9
+						}
+					}
+				]
+			}
+		</script>
+	</body>
+	</html>

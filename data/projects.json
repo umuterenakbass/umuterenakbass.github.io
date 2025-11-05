@@ -1,0 +1,97 @@
+{
+  "projects": [
+    {
+      "id": "flappy-ai",
+      "title": {"tr":"Deep Q-Learning ile Özerk Flappy Bird Oyunu","en":"Autonomous Flappy Bird with Deep Q-Learning"},
+      "summary": {"tr":"PyTorch ile geliştirilen DQN ajanı; experience replay, epsilon-greedy ve target network güncellemeleriyle Flappy Bird oynuyor.","en":"A PyTorch DQN agent plays Flappy Bird using experience replay, epsilon-greedy, and target network updates."},
+      "description": {"tr":"PyTorch tabanlı Deep Q-Network (DQN) yaklaşımıyla Flappy Bird oynayan bir ajan. Experience replay, epsilon-greedy keşif, hedef ağ (target network) ve istikrarı artıran modern DQN teknikleriyle eğitildi. Pygame ortamı üzerinde eğitim/izleme ve performans metrikleri raporlandı.","en":"A Flappy Bird agent built with a PyTorch Deep Q-Network (DQN). Trained with experience replay, epsilon-greedy exploration, a target network, and other stability techniques. Training/monitoring on a Pygame environment with reported performance metrics."},
+      "tags": ["Deep Learning", "Reinforcement Learning", "DQN", "PyTorch", "Game AI", "Machine Learning", "Flappy Bird", "Python", "Pygame"],
+      "images": [
+        "assets/projects/project5/ss1.png",
+        "assets/projects/project5/metrics.png"
+      ],
+      "links": {"repo": "https://github.com/umuterenakbass/flappy_ai"},
+      "metrics": {
+        "Ortalama Ödül": 817.99,
+        "Medyan Ödül": 528.60,
+        "Std Sapma": 1297.91,
+        "Minimum Ödül": -922.38,
+        "Maksimum Ödül": 9915.90,
+        "En İyi Episode": 163,
+        "En Kötü Episode": 34
+      }
+    },
+    {
+  "id": "fake-news-analysis",
+  "title": {"tr":"Yalan Haber Analizi","en":"Fake News Analysis"},
+  "summary": {"tr":"Makine öğrenmesi ile sahte haber tespiti yapan web uygulaması.","en":"A web app that detects fake news with machine learning."},
+  "description": {"tr":"Makine öğrenmesi ile haber metinlerinde sahte/gerçek sınıflandırması yapan Flask tabanlı bir web uygulaması. scikit-learn, pandas ve NumPy ile eğitim; Bootstrap 5 ile arayüz; sonuçlarda güven skoru gösterimi.","en":"A Flask web app for fake/real classification on news text using scikit‑learn, pandas, and NumPy; Bootstrap 5 UI; shows a confidence score for predictions."},
+      "tags": ["Python", "Flask", "scikit-learn", "pandas", "NumPy", "Bootstrap 5"],
+      "images": [
+        "assets/projects/project4/ss1.png"
+      ],
+      "links": {"repo": "https://github.com/umuterenakbass/fake-news-detection"},
+      "metrics": {
+        "Accuracy": 93,
+        "FAKE F1": 93,
+        "REAL F1": 93
+      }
+    },
+    {
+  "id": "p-reddit-sentiment-analysis",
+  "title": {"tr":"Reddit Yorumları Üzerinde Duygu Analizi","en":"Sentiment Analysis on Reddit Comments"},
+  "summary": {"tr":"Reddit’ten çekilen 7000 yorumda LSTM, BiLSTM ve CNN ile duygu analizi; Flask arayüzünde görselleştirme.","en":"Sentiment analysis on 7k Reddit comments with LSTM, BiLSTM, and CNN; visualized in a Flask UI."},
+  "description": {"tr":"Bu proje kapsamında, Reddit’ten PRAW ile toplanan 7000 İngilizce yorum temizlenmiş ve TextBlob ile pozitif/negatif/nötr olarak etiketlenmiştir. LSTM, BiLSTM ve CNN modelleri ile sınıflandırma yapılmış; doğruluk, kayıp ve F1 skorları analiz edilmiştir. Sonuçlar Flask tabanlı web uygulamasında grafiksel sunulmuştur; veri dengesizliği ve underfitting etkileri çeşitli yöntemlerle ele alınmıştır.","en":"Collected 7,000 English comments from Reddit with PRAW, cleaned and labeled as positive/negative/neutral via TextBlob. Trained LSTM, BiLSTM, and CNN models; analyzed accuracy, loss, and F1 scores. Results are visualized in a Flask web app; addressed class imbalance and underfitting with various techniques."},
+      "tags": ["Python", "Flask", "Deep Learning", "NLP", "LSTM", "BiLSTM", "CNN", "TextBlob"],
+      "images": [
+        "assets/projects/project3/accuracy.png",
+        "assets/projects/project3/f1_score.png",
+        "assets/projects/project3/loss.png"
+      ],
+      "links": {"repo": "https://github.com/umuterenakbass/redditscrap"},
+      "metrics": {
+        "LSTM F1": 79,
+        "BiLSTM F1": 79,
+        "CNN F1": 77
+      }
+    },
+    {
+  "id": "top-movie",
+  "title": {"tr":"CineFind","en":"CineFind"},
+  "summary": {"tr":"IMDb Film Keşif Uygulaması","en":"IMDb Movie Discovery App"},
+  "description": {"tr":"IMDb verisiyle tür bazında en yüksek puanlı filmleri keşfetmeye yardımcı bir web uygulaması. Modern arayüz, hızlı scraping, rastgele öneriler ve CSV dışa aktarma özellikleri içerir.","en":"A web app to discover top‑rated movies by genre using IMDb data. Features a modern UI, fast scraping, random recommendations, and CSV export."},
+      "tags": ["Python", "Flask", "BeautifulSoup", "HTML", "CSS", "JavaScript"],
+      "images": [
+        "assets/projects/project2/ss1.png",
+        "assets/projects/project2/ss2.png",
+        "assets/projects/project2/ss3.png"
+      ],
+      "links": {"repo": "https://github.com/umuterenakbass/topmovie"},
+      "metrics": {
+        "Routes": 70,
+        "Kategoriler": 87,
+        "Scraping Yöntemi": 100,
+        "Frontend Fonksiyon": 75,
+        "CSS Animasyon": 80
+      }
+    },
+    {
+  "id": "music-recommender",
+  "title": {"tr":"Musicommend","en":"Musicommend"},
+  "summary": {"tr":"KNN tabanlı müzik öneri sistemi","en":"Music Recommender using KNN"},
+  "description": {"tr":"Ses özelliklerine dayalı benzer şarkılar öneren K‑En Yakın Komşu (KNN) tabanlı bir müzik öneri sistemi.","en":"A K‑Nearest Neighbors (KNN) based music recommendation system suggesting similar songs using audio features."},
+      "tags": ["Python", "NumPy", "Pandas", "Scikit-learn", "KNN"],
+      "images": [
+        "assets/projects/project1/ss1.png",
+        "assets/projects/project1/ss2.png"
+      ],
+      "links": {"repo": "https://github.com/umuterenakbass/musicomend"},
+      "metrics": {
+        "Başarı Oranı": 100,
+        "Çeşitlilik": 91,
+        "Yanıt Hızı": 99,
+        "Benzerlik": 9
+      }
+    }
+  ]
+}
